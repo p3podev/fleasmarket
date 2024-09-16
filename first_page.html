@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fleas Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-yellow: #fcfaf1;
+        --text-input-field: #cacaca;
+        --cuack-yellow: #e6b31e;
+        --dark: #343434;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .cards_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+      .product_card {
+        width: 240px;
+      }
+      .product_card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .product_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product_info figure {
+        margin: 0;
+      }
+      .product_info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product_info div p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        margin-top: 0px;
+        margin-bottom: 4px;
+      }
+      .product_info div p:nth-child(2){
+        color: var(--text-input-field);
+        font-size: var(--sm);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      @media (max-width: 640px) {
+        .cards_container {
+          grid-template-columns: repeat(auto-fill, 140px);
+        }
+        .product_card {
+          width: 140px;
+        }
+        .product_card img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main_container">
+      <div class="cards_container">
+        <div class="product_card">
+          <img
+            src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+            alt=""
+            class="product-img"
+          />
+          <div class="product_info">
+            <div>
+              <p>$15.00</p>
+              <p>Camiseta</p>
+            </div>
+            <figure>
+              <img
+                src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="product_card">
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+            alt=""
+            class="product-img"
+          />
+          <div class="product_info">
+            <div>
+              <p>$15.00</p>
+              <p>Buzo</p>
+            </div>
+            <figure>
+              <img
+                src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+        <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Camiseta</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <div class="product_card">
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt=""
+              class="product-img"
+            />
+            <div class="product_info">
+              <div>
+                <p>$15.00</p>
+                <p>Buzo</p>
+              </div>
+              <figure>
+                <img
+                  src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/cart_add.svg"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>

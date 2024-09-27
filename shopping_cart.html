@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart - Fleas Market</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --very-light-yellow: #fcfaf1;
+        --text-input-field: #cacaca;
+        --cuack-yellow: #e6b31e;
+        --dark: #343434;
+        --white: #ffffff;
+        --black: #000000;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+      }
+      .product-detail {
+        width: 360px;
+        padding: 24px;
+        position: absolute;
+        right: 0;
+      }
+      .titte-container{
+        display: flex;
+        margin-bottom: 40px;
+        align-items: center;
+      }
+      .titte-container img{
+        transform: rotate(180deg);
+        width: 30px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: var(--cuack-yellow);
+        margin-right: 14px;
+      }
+      .tittle {
+        font-size: var(--lg);
+        font-weight: bold;
+      }
+      .my_order_content {
+        display: flex;
+        flex-direction: column;
+      }
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--very-light-yellow);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+      }
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+      }
+      .shopping_card {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto auto;
+        margin-bottom: 24px;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+      .shopping_card figure {
+        margin: 0;
+      }
+      .shopping_card figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .shopping_card p:nth-child(2) {
+        color: var(--text-input-field);
+      }
+      .shopping_card p:nth-child(3) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .shopping_card img {
+        height: 25px;
+        border-radius: 25px;
+        background-color: var(--cuack-yellow);
+      }
+      .primary-button {
+        background-color: var(--cuack-yellow);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        font-size: var(--md);
+        cursor: pointer;
+        font-weight: bold;
+        height: 50px;
+      }
+      .add-to-cart-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      @media (max-width: 640px) {
+        .product-detail {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="product-detail">
+      <div class="titte-container">
+        <img src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/arrow.svg" alt="arrow" />
+        <p class="tittle">Shopping Cart</p>
+      </div>
+      <div class="my_order_content">
+        <div class="shopping_card">
+          <figure>
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt="camiseta"
+            />
+          </figure>
+          <p>Buzo</p>
+          <p>$15.00</p>
+          <img src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/close.svg" alt="close" />
+        </div>
+        <div class="shopping_card">
+          <figure>
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt="camiseta"
+            />
+          </figure>
+          <p>Camiseta</p>
+          <p>$15.00</p>
+          <img src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/close.svg" alt="close" />
+        </div>
+        <div class="shopping_card">
+          <figure>
+            <img
+              src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2ce7cafa-6292-450c-8738-97fcb4d93479/dhv7o7s-b55e22a8-6ca3-460c-bf7e-dc3aa7f67bd0.png/v1/fill/w_1280,h_1280/muscles__n__cars__hoodie____black_by_carmod_agency_dhv7o7s-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzJjZTdjYWZhLTYyOTItNDUwYy04NzM4LTk3ZmNiNGQ5MzQ3OVwvZGh2N283cy1iNTVlMjJhOC02Y2EzLTQ2MGMtYmY3ZS1kYzNhYTdmNjdiZDAucG5nIiwiaGVpZ2h0IjoiPD0xMjgwIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvMmNlN2NhZmEtNjI5Mi00NTBjLTg3MzgtOTdmY2I0ZDkzNDc5XC9jYXJtb2QtYWdlbmN5LTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.7j0uE9m8N98S5mBlpI9KuJWyZBiCUHYClU_SAZ3DvCY"
+              alt="camiseta"
+            />
+          </figure>
+          <p>Buzo</p>
+          <p>$15.00</p>
+          <img src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/close.svg" alt="close" />
+        </div>
+        <div class="shopping_card">
+          <figure>
+            <img
+              src="https://cdn.printerval.com/image/960x960/t-shirts-hombres-classic-t-shirt-1,negro,print-2023-04-28_359ff2a3-ec3b-432c-aaed-0ceba01b6692,2f3032.jpeg"
+              alt="camiseta"
+            />
+          </figure>
+          <p>Camiseta</p>
+          <p>$15.00</p>
+          <img src="https://res.cloudinary.com/dlnwcr805/image/upload/v1726258150/fleasmarket/close.svg" alt="close" />
+        </div>
+        <div class="order">
+          <p>
+            <span> Total </span>
+          </p>
+          <p>$560.00</p>
+        </div>
+      </div>
+      <button class="primary-button add-to-cart-button">Checkout</button>
+    </aside>
+  </body>
+</html>
